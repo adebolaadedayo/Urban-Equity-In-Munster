@@ -1,0 +1,10 @@
+2026-04-16 15:04:19,006 - DataExtractor - INFO - Extracting population from: C:\ADE\Works\Muenster_GreenSpace\app\data\germany_population.tif
+2026-04-16 15:04:19,042 - DataExtractor - ERROR - Population extraction failed: Object is not a recognized source of Features
+2026-04-16 15:40:04,859 - DataExtractor - INFO - Extracting population from: C:\ADE\Works\Muenster_GreenSpace\app\data\germany_population.tif
+2026-04-16 15:40:04,866 - DataExtractor - ERROR - Population extraction failed: Object is not a recognized source of Features
+2026-04-16 15:46:39,256 - SpatialEngine - INFO - Loading boundary from: C:\ADE\Works\Muenster_GreenSpace\app\data\munster_shape\stadtteil_(statistischer_bezirk).shp
+2026-04-16 15:46:39,358 - SpatialEngine - INFO - Generating hexagons with area 100000 sqm
+2026-04-16 15:46:39,428 - SpatialEngine - INFO - Clipping hexagons to study area boundary...
+2026-04-16 15:46:39,552 - SpatialEngine - INFO - Successfully created 3219 hexagons matching notebook logic
+2026-04-16 15:46:39,553 - DataExtractor - INFO - Extracting population from: C:\ADE\Works\Muenster_GreenSpace\app\data\germany_population.tif
+2026-04-16 15:46:39,795 - DataExtractor - ERROR - Population extraction failed: Unable to allocate 715. GiB for an array with shape (1, 470854, 407772) and data type float32

@@ -1,0 +1,36 @@
+munster_equity_project/
+│
+├── main.py                # The "Conductor" (runs the full pipeline)
+├── config.py              # The "Brain" (paths, DB credentials, city name)
+├── logger.py              # The "Pen" (writes the log messages)
+│
+├── logs/                  # The "Archive" (created automatically)
+│   └── pipeline.log       # The text file containing all your history
+│
+├── modules/               # The "Engine Room" (reusable logic)
+│   ├── __init__.py        # Required to make this a package
+│   ├── spatial_engine.py  # Hexagon generation & PostGIS sync
+│   ├── data_extractor.py  # WorldPop (Raster) & OSM (Greenery)
+│   └── analytics.py       # Equity math (Green Space per Capita)
+│
+└── data/                  # Your "Local Library"
+    ├── deu_ppp_2020.tif   # WorldPop Population Raster
+    └── Munster_Boundary.shp  # Your original study area shapefile
+
+
+
+Muenster_GreenSpace/
+│
+├── app/
+│   ├── main.py              # Your data pipeline runner
+│   ├── etl/                 # Your completed backend engine
+│   │   ├── spatial_engine.py
+│   │   ├── data_extractor.py
+│   │   └── analytics.py
+│   │
+│   ├── server.py            # NEW: The Flask Web Server (The Bridge)
+│   │
+│   └── templates/           # NEW: Frontend UI Folder
+│       └── index.html       # NEW: The Map interface (Leaflet.js)
+│
+└── config.py                # Database credentials
